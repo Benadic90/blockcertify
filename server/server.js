@@ -28,6 +28,15 @@ app.use(
         callback(null, true);
         return;
       }
+      try {
+        const hostname = new URL(origin).hostname;
+        if (hostname.endsWith(".vercel.app")) {
+          callback(null, true);
+          return;
+        }
+      } catch (_error) {
+        // Ignore malformed origin and reject below.
+      }
       callback(new Error("Origin not allowed by CORS"));
     },
     credentials: true
