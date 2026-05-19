@@ -1,0 +1,25 @@
+node_modules
+*/node_modules
+.env
+dist
+build
+.DS_Store
+
+server/uploads/*
+!server/uploads/.gitkeep
+!server/uploads/certificates/
+!server/uploads/certificates/.gitkeep
+
+client/.env
+server/.env
+blockchain/.env
+
+cache
+artifacts
+
+# Project-specific extras
+*.log
+run-logs/
+blockchain/cache/
+blockchain/artifacts/
+blockchain/typechain-types/
