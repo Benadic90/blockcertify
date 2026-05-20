@@ -48,6 +48,13 @@ app.use(morgan("dev"));
 
 app.use("/uploads", express.static(path.resolve("uploads")));
 
+app.get("/", (_req, res) => {
+  res.json({
+    status: "ok",
+    message: "BlockCertify backend is live. Use /api/health to check API status."
+  });
+});
+
 app.get("/api/health", (_req, res) => {
   res.json({ status: "ok", message: "BlockCertify API is running" });
 });
