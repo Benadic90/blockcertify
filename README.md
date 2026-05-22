@@ -2,6 +2,7 @@
 
 BlockCertify is a full-stack MERN + Blockchain project for issuing and verifying certificates.
 Only certificate hashes are stored on-chain for tamper-proof verification.
+check demo working live https://blockcertify-five.vercel.app/
 
 Tagline: **Verify Certificates. Prevent Fraud. Trust Blockchain.**
 
